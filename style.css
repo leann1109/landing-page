@@ -3,17 +3,46 @@
     padding: 0;
 }
 
-img {
+body, .about-me {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.tile-images, .logo-image {
     width: 100px;
 }
 
-header, .about-me, footer {
-    background-color: #1F2937;
+.about-me-image {
+    display: flex;
+    flex: 1;
+    height: 100vh;
 }
 
 .logo {
     font-size: 24px;
     color: #f9faf8;
+    display: flex;
+    flex: 1;
+}
+
+/* makes footer stay on the bottom */
+header, main, footer {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+header, .about-me, footer {
+    background-color: #1F2937;
+    display: flex;
+}
+
+nav, .about-me {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    border: solid white;
 }
 
 ul {
@@ -24,6 +53,11 @@ a {
     text-decoration: none;
     color: #e5e7eb;
     font-size: 18px;
+}
+
+.links {
+    display: flex;
+    flex: 1;
 }
 
 h1 {
@@ -51,4 +85,10 @@ button {
 
 p, button, footer {
     color: #e5e7eb;
+}
+
+footer {
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
 }
