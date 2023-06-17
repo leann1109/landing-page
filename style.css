@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body, .about-me {
@@ -9,14 +10,10 @@ body, .about-me {
     height: 100vh;
 }
 
-.tile-images {
-    width: 100px;
-}
-
 .about-me-image {
     display: flex;
     flex: 1;
-    height: 100vh;
+    width: 50%;
     justify-content: center;
     align-items: center;
 }
@@ -80,9 +77,40 @@ a {
 
 h1 {
     /* font-family: ; */
-    font-size: 48px;
-    font-weight: 900;
     color: #f9faf8;
+}
+
+#projects-header, figcaption {
+    color: #1F2937;
+    align-items: center;
+    text-align: center;
+}
+
+h1, #projects-header {
+    font-size: 48px;
+    font-weight: 900
+    ;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tiles-container {
+    display: flex;
+}
+
+.tile-images {
+    width: 100px;
+    padding: 10px;
+    border: solid 5px #3882f6;
+    border-radius: 10px;
+    margin: 30px;
 }
 
 .quote-section {
