@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100px;
+}
+
+header, .about-me, footer {
+    background-color: #1F2937;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+h1 {
+    /* font-family: ; */
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: 1f2937;
+}
+
+.resume-section, .email-section {
+    background-color: #3882f6;
+}
+
+button {
+    background-color: #3882f6;
+}
+
+p, button, footer {
+    color: #e5e7eb;
+}
