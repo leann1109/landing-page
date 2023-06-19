@@ -5,27 +5,16 @@
     align-items: center;
 }
 
-.logo, header, nav, ul, .links, .about-me, .about-me-image, .projects, .tiles-container, footer {
+.logo, header, nav, ul, .links, .about-me, .about-me-image, .projects, .tiles-container, .resume-email-section, footer {
     display: flex;
     flex: 1;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: 900;
-    color: #f9faf8;
-    padding: 10px 0;
-}
-
-.logo-image {
-    height: 50px;
 }
 
 .logo-image, .about-me-details {
     margin-left: 15vw;
 }
 
-.links, .about-me-image {
+ul, .about-me-image {
     margin-right: 15vw;
 }
 
@@ -39,7 +28,18 @@ header, .about-me, footer {
     background-color: #1F2937;
 }
 
-#about-me-details {
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: #f9faf8;
+    padding: 10px 0;
+}
+
+.logo-image {
+    height: 50px;
+}
+
+.about-me-details {
     display: flex;
     flex: 1 1 ;
     flex-direction: column;
@@ -61,8 +61,9 @@ a {
     margin-left: 30px;
 }
 
-a, .buttons {
+a, p, h4, .about-me-button, .buttons, footer {
     font-size: 18px;
+    color: #e5e7eb;
 }
 
 h1 {
@@ -107,32 +108,29 @@ strong {
     text-align: end;
 }
 
-.resume-email-section {
-    background-color: #3882f6;
-    display: flex;
-    flex-direction: column;
-    margin: 10vh 15vw;
-    padding: 20px;
-    border-radius: 10px;
+.quote {
+    margin: 0 20vw;
+    padding: 10vh 0;
 }
 
-h4 {
-    font-size: 24px;
-}  
+.resume-email-section {
+    background-color: #3882f6;
+    margin: 10vh 15vw;
+    border-radius: 10px;
+    flex-direction: column;
+}
 
 .about-me-button, .buttons {
     background-color: #3882f6;
+    margin: 10px 0;
     padding: 5px 20px;
     border-radius: 10px;
     font-weight: bold;
+    border: solid #3882f6;
 }
 
 .buttons {
     border: solid 1px #e5e7eb;
-}
-
-a, p, h4, button, footer {
-    color: #e5e7eb;
 }
 
 footer {
