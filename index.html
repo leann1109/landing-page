@@ -17,7 +17,7 @@
 
             <div class="links">
                 <ul>
-                    <div><li><a href=".about-me">Home</a></li></div>
+                    <div><li><a href="#">Home</a></li></div>
                     <div><li><a href="#projects">Projects</a></li></div>
                     <div><li><a href="#resume">Resume</a></li></div>
                     <div><li><a href="#email">Email</a></li></div>
@@ -28,13 +28,12 @@
 
     <main>
         <section class="about-me">
-            <div class="about-me">
+            <div class="about-me-details" id="about-me-details">
                 <h1>Lean Obregon</h1>
 
-                <p>Something about developer</p>
                 <p>Something about why I want to be a developer</p>
 
-                <button class="buttons">Sign Up</button>
+                <button class="about-me-button">Resume</button>
             </div>
 
             <div class="about-me-image">
@@ -61,8 +60,8 @@
             </div>
         </section>
 
-        <section>
-            <div class="quote-section">
+        <section class="quote-section">
+            <div class="quote">
                 "We learn wisdom from failure much more than from success; we often discover what will do by finding out 
                 what will not do; and probably he who never makes a mistake never made a discovery."
                 <strong>— Samuel Smiles</strong>
@@ -70,18 +69,20 @@
         </section>
 
         <section class="resume-email-section">
-            <div class="resume-section" id="resume">
-                <div>
-                    <p>Would like to get my resume?</p>
+            <div class="resume-section">
+                <div class="resume" id="resume">
+                    <h4>Would like to get my resume?</h4>
+                    <p>Click the download button on the right side to get a copy of my resume.</p>
                 </div>
                 <div>
                     <button class="buttons">Download</button>
                 </div>
             </div>
 
-            <div class="email-section" id="email">
-                <div>
-                    <p>Would you like to email me instead?</p>
+            <div class="email-section">
+                <div class="email" id="email">
+                    <h4>Would you like to email me instead?</h4>
+                    <p>If you would prefer to email me, click the email button instead.</p>
                 </div>
                 <div>
                     <button class="buttons">Email</button>
@@ -92,7 +93,7 @@
 
     <footer>
         <div>
-            Copyright <!-- Copyright logo --> by Lean Obregon 2023
+            Copyright &copy; by Lean Obregon 2023
         </div>
     </footer>
 	<script src="index.js"></script>
