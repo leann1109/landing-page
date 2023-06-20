@@ -54,6 +54,7 @@ header, .about-me, footer {
 
 .logo-image {
     height: 50px;
+    margin-right: 10px;
 }
 
 .about-me-details {
@@ -86,7 +87,7 @@ h1 {
 
 #projects-header, figcaption {
     color: #1F2937;
-    text-align: center;
+    margin: 0 auto;
 }
 
 h1, #projects-header {
@@ -101,11 +102,12 @@ h1, #projects-header {
 }
 
 .tiles-container {
-    gap: 20px;
+    gap: 0 20px;
     align-items: flex-start;
 }
 
 .tile-images {
+    display: block;
     width: 100px;
     height: 100px;
     padding: 10px;
@@ -118,6 +120,7 @@ h2 {
     font-size: 24px;
     margin: 10px 0;
     text-align: center;
+    justify-content: end;
 }
 
 .tile-description,
@@ -159,9 +162,10 @@ h2 {
 }
 
 .question {
-    align-items: start;
-    margin: 0 10vw;
-    flex-direction: row;
+    display: inline-block;
+    /* width: 100%; */
+    /* align-items: start; */
+    margin-left: 10vw;
 }
 
 .about-me-button, .buttons {
@@ -179,9 +183,10 @@ h2 {
 
 #resume-button,
 #email-button {
-    justify-content: flex-end;
-    align-content: flex-end;
-    margin-right: 10vw;
+    display: inline-block;
+    /* justify-content: end; */
+    /* align-content: end; */
+    /* margin-right: 10vw; */
 }
 
 footer {
