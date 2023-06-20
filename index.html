@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <header>
-        <nav>
-            <div class="logo">
+    <header class="container">
+        <nav class="container">
+            <div class="logo container">
                 <img class="logo-image" src="terminal.png" alt="computer terminal logo">
                 Lean Obregon
             </div>
 
-            <div class="links">
-                <ul>
+            <div class="links container">
+                <ul class="container">
                     <div><li><a href="#">Home</a></li></div>
                     <div><li><a href="#projects">Projects</a></li></div>
                     <div><li><a href="#resume">Resume</a></li></div>
@@ -27,8 +27,8 @@
     </header>
 
     <main>
-        <section class="about-me">
-            <div class="about-me-details">
+        <section class="about-me container">
+            <div class="about-me-details container">
                 <h1>Lean Obregon</h1>
 
                 <p>Graduated on December 2022 from New Jersey Institute of Technology with a Bachelors Degree in Information Technology.</p><br>
@@ -37,31 +37,46 @@
                 <button class="about-me-button">Resume</button>
             </div>
 
-            <div class="about-me-image">
+            <div class="about-me-image container">
                 <img class="about-me-image" src="coding.jpg" alt="Laptop with code"> 
             </div>
         </section>
 
-        <!-- random info -->
-        <section class="projects" id="projects">
+        <section class="projects container" id="projects">
             <h1 class="projects-header" id="projects-header">Projects</h1>
             <div class="tiles-container">
-                <div class="tiles">
-                    <img class="tile-images" src="html.png" alt="HTML Logo">
-                    <figcaption>HTML 5</figcaption>
+                <div class="tiles container">
+                    <a class="tile-link" href="https://leann1109.github.io/little-lemon/" target="_blank"><img class="tile-images" src="little-lemon-website.png" alt="Little Lemon Restaurant website screenshot"></a>
+                    <h2>Little Lemon Restaurant</h2>
+                    <p class="tile-description">One page fictitious restaurant</p>
+                    <a class="tile-link" href="https://leann1109.github.io/little-lemon/" target="_blank">Website</a>
+                    <a class="tile-link" href="https://github.com/leann1109/little-lemon/blob/master/index.html" target="_blank" >Code</a>
                 </div>
-                <div class="tiles">
-                    <img class="tile-images" src="css.png" alt="CSS Logo">
-                    <figcaption>CSS</figcaption>
+                <div class="tiles container">
+                    <img class="tile-images" src="work-in-progress.jpg" alt="Neon work in progress sign">
+                    <h2>Work in Progress</h2>
+                    <p class="tile-description">Photo acquired from <a class="tile-link" href="//www.vecteezy.com/?utm_source=vecteezy-download&utm_medium=license-info-pdf&utm_campaign=license-info-document" target="_blank" >Vecteezy.com</a></p>
+
                 </div>
-                <div class="tiles">
-                    <img class="tile-images" src="js.png" alt="Javascript Logo">
-                    <figcaption>Javascript</figcaption>
+                <div class="tiles container">
+                    <img class="tile-images" src="work-in-progress.jpg" alt="Neon work in progress sign">
+                    <h2>Work in Progress</h2>
+                    <p class="tile-description">Photo acquired from <a class="tile-link" href="//www.vecteezy.com/?utm_source=vecteezy-download&utm_medium=license-info-pdf&utm_campaign=license-info-document" target="_blank" >Vecteezy.com</a></p>
+                </div>
+                <div class="tiles container">
+                    <img class="tile-images" src="work-in-progress.jpg" alt="Neon work in progress sign">
+                    <h2>Work in Progress</h2>
+                    <p class="tile-description">Photo acquired from <a class="tile-link" href="//www.vecteezy.com/?utm_source=vecteezy-download&utm_medium=license-info-pdf&utm_campaign=license-info-document" target="_blank" >Vecteezy.com</a></p>
+                </div>
+                <div class="tiles container">
+                    <img class="tile-images" src="work-in-progress.jpg" alt="Neon work in progress sign">
+                    <h2>Work in Progress</h2>
+                    <p class="tile-description">Photo acquired from <a class="tile-link" href="//www.vecteezy.com/?utm_source=vecteezy-download&utm_medium=license-info-pdf&utm_campaign=license-info-document" target="_blank" >Vecteezy.com</a></p>
                 </div>
             </div>
         </section>
 
-        <section class="quote-section">
+        <section class="quote-section container">
             <div class="quote">
                 "We learn wisdom from failure much more than from success; we often discover what will do by finding out 
                 what will not do; and probably he who never makes a mistake never made a discovery."
@@ -69,7 +84,7 @@
             </div>
         </section>
 
-        <section class="resume-email-section">
+        <section class="resume-email-section container">
             <div class="resume" id="resume">
                 <h4>Would like to get my resume?</h4>
                 <p>Click the download button on the right side to get a copy of my resume.</p>
