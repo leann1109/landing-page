@@ -162,7 +162,7 @@ h2 {
     padding: 20px 0;
     height: 20vh;
     align-items:stretch;
-    flex: 9 0 800px;
+    min-width: 800px;
 }
 
 .resume,
@@ -170,12 +170,13 @@ h2 {
     margin: 0 10vw;
     display: flex;
     flex: 1 1 800px;
+    min-width: 600px;
 }
 
 .question {
-    flex: 9 1 800px;
+    display: flex;
+    flex: 9;
     align-items: flex-start;
-    margin: 0;
 }
 
 .about-me-button,
