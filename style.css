@@ -110,8 +110,11 @@ h1, #projects-header {
 }
 
 .tiles-container {
-    gap: 0 20px;
     align-items: flex-start;
+}
+
+.tiles {
+    padding: 0 10px;
 }
 
 .tile-images {
