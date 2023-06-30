@@ -74,6 +74,9 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+.nav-link {
     margin-left: 30px;
 }
 
