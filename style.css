@@ -208,3 +208,26 @@ footer {
     padding: 15px;
     justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo-image, .about-me-details {
+        margin-left: 20px;
+    }
+
+    ul, .about-me-image {
+        margin-right: 20px;
+    }
+
+    .quote, .resume, .email {
+        margin: 0 60px;
+    }
+
+    .resume-email-section {
+        margin: 30px 20px;
+    }
+}
