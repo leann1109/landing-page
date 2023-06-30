@@ -119,6 +119,7 @@ h1, #projects-header {
 
 .tile-images {
     display: block;
+    overflow-wrap: normal;
     width: 100px;
     height: 100px;
     padding: 10px;
@@ -162,7 +163,9 @@ h2 {
 
 .quote {
     margin: auto 25vw;
-    flex: 1 0 600px;
+    flex: 1;
+    max-height: 285px;
+    min-width: 480px;
 }
 
 .resume-email-section {
@@ -172,15 +175,16 @@ h2 {
     padding: 20px 0;
     height: 20vh;
     align-items:stretch;
-    min-width: 800px;
+    min-width: 650px;
 }
 
 .resume,
 .email {
     margin: 0 10vw;
     display: flex;
-    flex: 1 1 800px;
-    min-width: 600px;
+    flex: 1;
+    min-width: 430px;
+    max-height: 90px;
 }
 
 .question {
