@@ -214,44 +214,62 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    body {
+    * {
         margin: 0;
         padding: 0;
         font-size: .5em;
-    }
-
-    .logo-image, .about-me-details {
-        margin-left: 20px;
-    }
-
-    ul, .about-me-image {
-        margin-right: 20px;
-    }
-
-    #projects-header {
-        margin-top: -20px;
-    }
-
-    .projects, .tiles-container, .tiles, .tile-images {
         display: flex;
-        flex: 1;
         flex-direction: column;
     }
 
-    .quote-section {
-        min-width: 500px;
+    .nav-link, title {
+        display: none;
     }
 
-    .quote {
-        margin: 0 20px;
+    nav.container, .logo.container {
+        flex-direction: row;
     }
 
-    .resume, .email {
-        margin: 0 15px;
+    .logo-image {
+        margin: 0 10px;
+        padding: 0;
     }
 
-    .resume-email-section {
-        margin: 30px 20px;
-        min-width: 380px;
+    .burger-menu {
+        background-color: #1F2937;
+    }
+
+    .burger-menu #burger-links {
+        display: none;
+    }
+
+    .burger-menu a {
+        color: #f9faf8;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+    }
+
+    .burger-menu a.icon {
+        background: #1F2937;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .burger-menu a:hover {
+        background-color: #f9faf8;
+        color: #1F2937;
+    }
+
+    .active {
+        background-color: #1F2937;
+        color: #f9faf8;
+    }
+
+    #projects-header {
+        margin-top: -30px;
     }
 }
