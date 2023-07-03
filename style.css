@@ -213,6 +213,11 @@ footer {
     justify-content: center;
 }
 
+.burger-menu #burger-links,
+.burger-menu a.icon {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     * {
         margin: 0;
