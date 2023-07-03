@@ -213,45 +213,7 @@ footer {
     justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        margin: 0;
-        padding: 0;
-        font-size: .5em;
-    }
-
-    .logo-image, .about-me-details {
-        margin-left: 20px;
-    }
-
-    ul, .about-me-image {
-        margin-right: 20px;
-    }
-
-    #projects-header {
-        margin-top: -20px;
-    }
-
-    .projects, .tiles-container, .tiles, .tile-images {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-    }
-
-    .quote-section {
-        min-width: 500px;
-    }
-
-    .quote {
-        margin: 0 20px;
-    }
-
-    .resume, .email {
-        margin: 0 15px;
-    }
-
-    .resume-email-section {
-        margin: 30px 20px;
-        min-width: 380px;
-    }
+.burger-menu #burger-links,
+.burger-menu a.icon {
+    display: none;
 }

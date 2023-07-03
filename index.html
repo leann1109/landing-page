@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lean Obregon</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <header class="container">
@@ -23,6 +24,20 @@
                     <div><li><a class="nav-link" href="#email">Email</a></li></div>
                 </ul>
             </div>
+
+            <div class="burger-menu">
+                <!-- Navigation links (hidden by default) -->
+                <div id="burger-links">
+                  <a href="#">Home</a>
+                  <a href="#projects">Projects</a>
+                  <a href="#resume">Resume</a>
+                  <a href="#email">Email</a>
+                </div>
+                <!-- "Hamburger menu" -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
         </nav>
     </header>
 
@@ -53,10 +68,11 @@
                     <a class="tile-link" href="https://github.com/leann1109/little-lemon/blob/master/index.html" target="_blank" >Code</a>
                 </div>
                 <div class="tiles container">
-                    <img class="tile-images" src="work-in-progress.jpg" alt="Neon work in progress sign">
-                    <h2>Work in Progress</h2>
-                    <p class="tile-description">Photo acquired from <a class="tile-link" href="//www.vecteezy.com/?utm_source=vecteezy-download&utm_medium=license-info-pdf&utm_campaign=license-info-document" target="_blank" >Vecteezy.com</a></p>
-
+                    <a class="tile-link" href="https://leann1109.github.io/etch-a-sketch/" target="_blank"><img class="tile-images" src="etch-a-sketch.png" alt="Etch-A-Sketch website screenshot saying Developer"></a>
+                    <h2>Etch-A-Sketch</h2>
+                    <p class="tile-description">Etch-A-Sketch made with JavaScript DOM Manipilation</p>
+                    <a class="tile-link" href="https://leann1109.github.io/etch-a-sketch/" target="_blank">Website</a>
+                    <a class="tile-link" href="https://github.com/leann1109/etch-a-sketch/blob/main/index.js" target="_blank" >Code</a>
                 </div>
                 <div class="tiles container">
                     <img class="tile-images" src="work-in-progress.jpg" alt="Neon work in progress sign">
