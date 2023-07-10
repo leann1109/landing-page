@@ -103,7 +103,7 @@ p:nth-of-type(2) {
 
 #projects-header, figcaption {
     color: #1F2937;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 h1, #projects-header {
@@ -118,12 +118,17 @@ h1, #projects-header {
     flex-wrap: wrap;
 }
 
+.tiles-container {
+    flex-wrap: wrap;
+}
+
 .tiles.container {
     align-items: center;
+    width: 250px;
 }
 
 .tiles {
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .tile-images {
@@ -220,7 +225,7 @@ footer {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 834px) {
     * {
         margin: 0;
         padding: 0;
