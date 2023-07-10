@@ -152,30 +152,37 @@ h2 {
     font-style: italic;
     font-weight: 100;
     color: #1f2937;
-    height: 40vh;
+    /* height: 40vh; */
 }
 
 .quote-author {
     font-size: 24px;
-    display: block;
-    text-align: end;
+    /* display: block; */
+    /* text-align: end; */
+    align-self: flex-end;
 }
 
 .quote {
-    margin: auto 25vw;
-    flex: 1;
-    max-height: 285px;
-    min-width: 480px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 25vw;
+    padding: 20px 0;
+    /* flex: 1; */
+    /* max-height: 285px; */
+    /* min-width: 480px; */
+}
+
+.resume-email-section.container {
+    margin: 10vh 15vw;
 }
 
 .resume-email-section {
-    background-color: #3882f6;
-    margin: 10vh 15vw;
-    border-radius: 10px;
-    padding: 20px 0;
-    height: 20vh;
-    align-items:stretch;
-    min-width: 650px;
+    background-color: #3882f6; 
+    border-radius: 16px;
+    padding: 30px 0;
+    /* height: 20vh; */
+    /* align-items:stretch; */
+    /* min-width: 650px; */
 }
 
 .resume,
@@ -183,13 +190,16 @@ h2 {
     margin: 0 10vw;
     display: flex;
     flex: 1;
-    min-width: 430px;
-    max-height: 90px;
+    /* min-width: 430px; */
+    /* max-height: 90px; */
+}
+
+.email {
+    margin-top: 20px;
 }
 
 .question {
     display: flex;
-    flex: 9;
     align-items: flex-start;
 }
 
@@ -211,6 +221,8 @@ h2 {
 footer {
     padding: 15px;
     justify-content: center;
+    align-content: flex-end;
+    align-self: flex-end;
 }
 
 .burger-menu #burger-links,
@@ -222,12 +234,18 @@ footer {
     * {
         margin: 0;
         padding: 0;
-        font-size: .5em;
         display: flex;
         flex-direction: column;
     }
 
-    .nav-link, title {
+    main {
+        height: 100vh;
+        width: 100vw;
+        font-size: .5em;
+    }
+
+    style, .nav-link, title,
+    .burger-menu #burger-links {
         display: none;
     }
 
@@ -236,16 +254,65 @@ footer {
     }
 
     .logo-image {
-        margin: 0 10px;
+        margin: 0 20px;
         padding: 0;
+    }
+
+    header.container,
+    nav.container,
+    .about-me.container,
+    .about-me-image,
+    .projects.container,
+    .tiles.container,
+    .quote-section.container,
+    footer {
+        margin: 0;
+        width: 100vw;
+    }
+
+    .about-me-details.container {
+        margin: 0 20px;
+    }
+
+    .tiles.container {
+        padding: 0;
+    }
+
+    .projects {
+        padding: 10px 0 30px;
+    }
+
+    .projects-header {
+        font-size: .6em;
+    }
+
+    .quote-section.container {
+        padding: 10px 0;
+    }
+
+    .quote {
+        margin: 0 100px 0;
+        font-size: .8em;
+    }
+
+    .quote > * {
+        font-size: .7em;
+    }
+
+    .resume-email-section.container {
+        margin: 30px;
+        align-items: flex-start;
+    }
+
+    a#resume-button.buttons,
+    a#email-button.buttons {
+        margin: 0 auto;
+        align-content: center;
+        justify-content: center;
     }
 
     .burger-menu {
         background-color: #1F2937;
-    }
-
-    .burger-menu #burger-links {
-        display: none;
     }
 
     .burger-menu a {
@@ -274,7 +341,9 @@ footer {
         color: #f9faf8;
     }
 
-    #projects-header {
-        margin-top: -30px;
+    footer {
+        padding: 10px 0;
+        /* align-items: end; */
+        /* align-self: flex-end; */
     }
 }
