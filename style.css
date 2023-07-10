@@ -1,4 +1,4 @@
-* {
+body {
     margin: 0;
     padding: 0;
     font-family: system-ui, 
@@ -12,10 +12,9 @@
                 'Open Sans', 
                 'Helvetica Neue', 
                 sans-serif;
-    align-items: center;
 }
 
-.container, .tiles-container, footer {
+.container, .tiles-container, .resume, .email, .question-container, footer {
     display: flex;
     flex: 1;
 }
@@ -24,7 +23,9 @@
 .projects,
 .tiles,
 .resume-email-section,
-.question {
+.resume-question,
+.email-question,
+.question-container {
     flex-direction: column;
 }
 
@@ -36,12 +37,6 @@ ul, .about-me-image {
     margin-right: 15vw;
 }
 
-/* makes footer stay on the bottom */
-header, main, footer {
-    flex-grow: 1;
-    flex-shrink: 0;
-}
-
 header, .about-me, footer {
     background-color: #1F2937;
 }
@@ -51,6 +46,7 @@ header, .about-me, footer {
     font-weight: 900;
     color: #f9faf8;
     padding: 10px 0;
+    align-items: center;
 }
 
 .logo-image {
@@ -58,13 +54,19 @@ header, .about-me, footer {
     margin-right: 10px;
 }
 
+.links.container {
+    align-items: center;
+}
+
 .about-me-details {
-    align-items: start;
+    align-items: flex-start;
+    justify-content: center;
     padding: 10px 0;
 }
 
 .about-me-image {
     width: 100%;
+    align-items: center;
 }
 
 ul {
@@ -93,6 +95,12 @@ h1 {
     color: #f9faf8;
 }
 
+h1:first-of-type, 
+p:nth-of-type(1),
+p:nth-of-type(2) {
+    margin: 0;
+}
+
 #projects-header, figcaption {
     color: #1F2937;
     margin: 0 auto;
@@ -104,13 +112,14 @@ h1, #projects-header {
 }
 
 .projects {
+    align-items: center;
     justify-content: center;
-    padding: 10px;
-    margin: 5vh 0;
+    padding: 10px 0 30px 0;
+    flex-wrap: wrap;
 }
 
-.tiles-container {
-    align-items: flex-start;
+.tiles.container {
+    align-items: center;
 }
 
 .tiles {
@@ -118,8 +127,6 @@ h1, #projects-header {
 }
 
 .tile-images {
-    display: block;
-    overflow-wrap: normal;
     width: 100px;
     height: 100px;
     padding: 10px;
@@ -152,24 +159,18 @@ h2 {
     font-style: italic;
     font-weight: 100;
     color: #1f2937;
-    /* height: 40vh; */
 }
 
 .quote-author {
     font-size: 24px;
-    /* display: block; */
-    /* text-align: end; */
     align-self: flex-end;
 }
 
 .quote {
     display: flex;
     flex-direction: column;
-    margin: 0 25vw;
+    margin: 0 20vw;
     padding: 20px 0;
-    /* flex: 1; */
-    /* max-height: 285px; */
-    /* min-width: 480px; */
 }
 
 .resume-email-section.container {
@@ -180,27 +181,14 @@ h2 {
     background-color: #3882f6; 
     border-radius: 16px;
     padding: 30px 0;
-    /* height: 20vh; */
-    /* align-items:stretch; */
-    /* min-width: 650px; */
-}
-
-.resume,
-.email {
-    margin: 0 10vw;
-    display: flex;
-    flex: 1;
-    /* min-width: 430px; */
-    /* max-height: 90px; */
 }
 
 .email {
     margin-top: 20px;
 }
 
-.question {
-    display: flex;
-    align-items: flex-start;
+.question-container {
+    margin: 0 5vw;
 }
 
 .buttons {
@@ -213,8 +201,10 @@ h2 {
     border: solid 1px #e5e7eb;
 }
 
-#resume-button,
-#email-button {
+.button-container {
+    display: flex;
+    flex: 1;
+    align-self: center;
     justify-content: flex-end;
 }
 
@@ -238,7 +228,7 @@ footer {
         flex-direction: column;
     }
 
-    main {
+    body {
         height: 100vh;
         width: 100vw;
         font-size: .5em;
@@ -301,18 +291,37 @@ footer {
 
     .resume-email-section.container {
         margin: 30px;
-        align-items: flex-start;
+        align-items: center;
     }
 
-    a#resume-button.buttons,
-    a#email-button.buttons {
+    .question-container {
+        margin: 0 5vw;
+    }
+
+    .email {
+        margin-top: 0;
+    }
+
+    .email-question,
+    .resume-question {
+        align-items: center;
+    }
+
+    .button-container {
         margin: 0 auto;
-        align-content: center;
-        justify-content: center;
+        align-items: center;
+    }
+
+    #email-button {
+        margin-bottom: 0;
     }
 
     .burger-menu {
         background-color: #1F2937;
+    }
+
+    #burger-links {
+        margin-top: 50px;
     }
 
     .burger-menu a {
@@ -343,7 +352,6 @@ footer {
 
     footer {
         padding: 10px 0;
-        /* align-items: end; */
-        /* align-self: flex-end; */
+        align-items: center;
     }
 }
