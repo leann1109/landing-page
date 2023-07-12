@@ -54,6 +54,10 @@ header, .about-me, footer {
     margin-right: 10px;
 }
 
+/* .logo.container {
+    position: absolute;
+} */
+
 .links.container {
     align-items: center;
 }
@@ -246,6 +250,10 @@ footer {
 
     nav.container, .logo.container {
         flex-direction: row;
+    }
+
+    .logo.container {
+        align-self: flex-start;
     }
 
     .logo-image {
